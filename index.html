@@ -28,6 +28,13 @@
              text-align: center;
 
         }
+        #myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
     </style>
 </head>
 
@@ -104,21 +111,27 @@
     <!-- Mouse cursor area end here -->
 
     <main>
-
+       
         <!-- Banner area start here -->
-        <section class="banner-two">
+        <section class="banner-two" >
+
             <div class="banner-two__shape-left d-none d-lg-block wow bounceInLeft" data-wow-duration="1s"
                 data-wow-delay=".5s">
                 <!-- <img src="assets/images/shape/vape1.png" alt="shape"> -->
             </div>
             <div class="banner-two__shape-right d-none d-lg-block wow bounceInRight" data-wow-duration="1s"
                 data-wow-delay=".1s">
-                <!-- <img class="sway_Y__animation " src="assets/images/shape/vape2.png" alt="shape"> -->
+             
             </div>
             <div class="swiper banner-two__slider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="slide-bg" data-background="assets/images/banner/banner-two-image1.jpg"></div>
+                        <div class="slide-bg" data-background="assets/images/banner/shadow.png">
+                            <video autoplay muted loop id="myVideo">
+                                <source src="assets/images/banner/video0.mp4" type="video/mp4">
+                              </video>
+
+                        </div>
                         <div class="container">
                             <div class="banner-two__content">
                                 <!-- <h4 data-animation="fadeInUp" data-delay="1s"><img src="assets/images/icon/fire.svg"
@@ -140,7 +153,10 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="slide-bg" data-background="assets/images/banner/banner-two-image2.jpg"></div>
+                        <div class="slide-bg" data-background="assets/images/banner/shadow.png"></div>
+                        <video autoplay muted loop id="myVideo">
+                            <source src="assets/images/banner/video5.mp4" type="video/mp4">
+                          </video>
                         <div class="container">
                             <div class="banner-two__content">
                                 
@@ -161,14 +177,17 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="slide-bg" data-background="assets/images/banner/banner-two-image3.jpg"></div>
+                        <div class="slide-bg" data-background="assets/images/banner/shadow.png"></div>
+                        <video autoplay muted loop id="myVideo">
+                            <source src="assets/images/banner/video4.mp4" type="video/mp4">
+                          </video>
                         <div class="container">
                             <div class="banner-two__content">
                                 
                                 <h1 data-animation="fadeInUp" data-delay="1.3s" style="color: white;">مجموعة ماهر بن نايف <br>
                                      <span class="primary-color">التجارية</span></h1>
                                 <p class="mt-40" data-animation="fadeInUp" data-delay="1.5s">نقدم لكم خدماتنا التقنية والفنية والتسويقية من أمهر الكوادر الشابه لفروعنا في   <br>
-                                         وجمهورية مصر العربية وهدفنا هو تقديم كل ماهو جديد وعصري لخدمة</p>
+                                        الصين وماليزيا وهدفنا هو تقديم كل ماهو جديد وعصري لخدمة</p>
                                 
                                 <div class="btn-wrp mt-65">
                                     <!-- <a href="shop.html" class="btn-one" data-animation="fadeInUp"
@@ -195,11 +214,11 @@
             <div class="marquee-inner to-left">
                 <ul class="marqee-list d-flex">
                     <li class="marquee-item">
-                        الخدمات البرمجية <img src="assets/images/icon/title-left.svg" alt="icon"> <span>الخدمات البرمجية</span>
+                       تصميم مواقع<img src="assets/images/icon/title-left.svg" alt="icon"> <span>الخدمات البرمجية</span>
                         <img src="assets/images/icon/title-left.svg" alt="icon">
-                        الخدمات الفنية <img src="assets/images/icon/title-left.svg" alt="icon"> <span>الخدمات الفنية</span>
+                        تصميم بوسترات اعلانية<img src="assets/images/icon/title-left.svg" alt="icon"> <span>الخدمات الفنية</span>
                         <img src="assets/images/icon/title-left.svg" alt="icon">
-                        الخدمات التسويقية <img src="assets/images/icon/title-left.svg" alt="icon"> <span>الخدمات التسويقية</span>
+                       إدارة سوشيل ميديا<img src="assets/images/icon/title-left.svg" alt="icon"> <span>الخدمات التسويقية</span>
                         
                     </li>
                 </ul>
@@ -212,7 +231,7 @@
 
         
                 <!-- View area start here -->
-                <section class="discount-area bg-image"   data-background="assets/images/bg/view-bg.jpg">
+                <section class="discount-area bg-image"   data-background="">
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-lg-6">
@@ -262,8 +281,8 @@
             <div class="container">
                 <div class="bor-bottom pb-130">
                     <div class="sub-title text-center mb-65 wow fadeInUp" data-wow-delay=".1s">
-                        <h2 style="margin-top: 10px;"><span class="title-icon"></span><a href="index.html"> خدماتنا</a> <span class="title-icon"></span>
-
+                      
+                            <h2 style="margin-top: 10px;"><span class="title-icon"></span><a href="index.html"> خدماتنا</a> <span class="title-icon"></span>
                         </h2>
                     </div>
                     <div class="swiper category__slider">
@@ -401,9 +420,8 @@
         <!-- Gallery area start here -->
         <section class="gallery-area">
             <div class="sub-title text-center mb-65">
-              <h2><span class="title-icon"></span><a href="index.html">اعمالنا</a> <span class="title-icon"></span></h2>
-
-                
+                <h2><span class="title-icon"></span> اعمالنا  <span class="title-icon"></span>
+                </h2>
             </div>
             <div class="swiper gallery__slider">
                 <div class="swiper-wrapper">
@@ -477,8 +495,7 @@
 
             <div class="container">
                 <div class="sub-title text-center mb-65">
-                     <h2><span class="title-icon"></span><a href="index.html">شركاء النجاح</a> <span class="title-icon"></span></h2>
-                  
+                        <h2><span class="title-icon"></span><a href="index.html">شركاء النجاح</a> <span class="title-icon"></span></h2>
                     </h2>
                 </div>
                 <div class="swiper brand__slider">
@@ -517,7 +534,107 @@
                 </div>
             </div>
         </section>
-        
+        <!-- <div class="styles_container__E4CGK"><div class="undefined conTitle">
+            <h2 class="dark:text-white">شركائنا فى النجاح</h2><div class="bar">
+
+            </div></div>
+            <div class="react-multi-carousel-list  styles_carousel__aViVK" dir="ltr">
+                <ul class="react-multi-carousel-track " style="transition: transform 500ms ease-in-out 0s; overflow: unset; transform: translate3d(-1910px, 0px, 0px);">
+                    <li data-index="0" aria-hidden="true" class="react-multi-carousel-item  " style="flex: 1 1 auto; position: relative; width: 191px;">
+                        <div class="styles_item__UQpeW">
+                            <img alt="" loading="lazy" width="120" height="120" decoding="async" data-nimg="1" class="styles_img__paUgT" src="/images/client1.png" style="color: transparent;">
+                        </div>
+                    </li>
+                    <li data-index="1" aria-hidden="true" class="react-multi-carousel-item  " style="flex: 1 1 auto; position: relative; width: 191px;">
+                        <div class="styles_item__UQpeW">
+                            <img alt="" loading="lazy" width="120" height="120" decoding="async" data-nimg="1" class="styles_img__paUgT" src="/images/client2.png" style="color: transparent;">
+                        </div>
+                    </li>
+                    <li data-index="2" aria-hidden="true" class="react-multi-carousel-item  " style="flex: 1 1 auto; position: relative; width: 191px;">
+                        <div class="styles_item__UQpeW">
+                            <img alt="" loading="lazy" width="120" height="120" decoding="async" data-nimg="1" class="styles_img__paUgT" src="/images/client3.png" style="color: transparent;">
+                        </div>
+                    </li>
+                    <li data-index="3" aria-hidden="true" class="react-multi-carousel-item  " style="flex: 1 1 auto; position: relative; width: 191px;">
+                        <div class="styles_item__UQpeW">
+                            <img alt="" loading="lazy" width="120" height="120" decoding="async" data-nimg="1" class="styles_img__paUgT" src="/images/client4.png" style="color: transparent;">
+                        </div>
+                    </li>
+                    <li data-index="4" aria-hidden="true" class="react-multi-carousel-item  " style="flex: 1 1 auto; position: relative; width: 191px;">
+                        <div class="styles_item__UQpeW">
+                            <img alt="" loading="lazy" width="120" height="120" decoding="async" data-nimg="1" class="styles_img__paUgT" src="/images/client5.png" style="color: transparent;">
+                        </div>
+                    </li>
+                    <li data-index="5" aria-hidden="true" class="react-multi-carousel-item  " style="flex: 1 1 auto; position: relative; width: 191px;">
+                        <div class="styles_item__UQpeW">
+                            <img alt="" loading="lazy" width="120" height="120" decoding="async" data-nimg="1" class="styles_img__paUgT" src="/images/client6.png" style="color: transparent;">
+                        </div>
+                    </li>
+                    <li data-index="6" aria-hidden="true" class="react-multi-carousel-item  " style="flex: 1 1 auto; position: relative; width: 191px;">
+                        <div class="styles_item__UQpeW">
+                            <img alt="" loading="lazy" width="120" height="120" decoding="async" data-nimg="1" class="styles_img__paUgT" src="/images/client1.png" style="color: transparent;">
+                        </div>
+                    </li>
+                    <li data-index="7" aria-hidden="true" class="react-multi-carousel-item  " style="flex: 1 1 auto; position: relative; width: 191px;">
+                        <div class="styles_item__UQpeW">
+                            <img alt="" loading="lazy" width="120" height="120" decoding="async" data-nimg="1" class="styles_img__paUgT" src="/images/client2.png" style="color: transparent;">
+                        </div>
+                    </li>
+                    <li data-index="8" aria-hidden="true" class="react-multi-carousel-item  " style="flex: 1 1 auto; position: relative; width: 191px;">
+                        <div class="styles_item__UQpeW">
+                            <img alt="" loading="lazy" width="120" height="120" decoding="async" data-nimg="1" class="styles_img__paUgT" src="/images/client3.png" style="color: transparent;">
+                        </div>
+                    </li>
+                    <li data-index="9" aria-hidden="true" class="react-multi-carousel-item  " style="flex: 1 1 auto; position: relative; width: 191px;">
+                        <div class="styles_item__UQpeW">
+                            <img alt="" loading="lazy" width="120" height="120" decoding="async" data-nimg="1" class="styles_img__paUgT" src="/images/client4.png" style="color: transparent;">
+                        </div>
+                    </li>
+                    <li data-index="10" aria-hidden="false" class="react-multi-carousel-item react-multi-carousel-item--active " style="flex: 1 1 auto; position: relative; width: 191px;">
+                        <div class="styles_item__UQpeW">
+                            <img alt="" loading="lazy" width="120" height="120" decoding="async" data-nimg="1" class="styles_img__paUgT" src="/images/client5.png" style="color: transparent;">
+                        </div>
+                    </li>
+                    <li data-index="11" aria-hidden="false" class="react-multi-carousel-item react-multi-carousel-item--active " style="flex: 1 1 auto; position: relative; width: 191px;"><div class="styles_item__UQpeW">
+                        <img alt="" loading="lazy" width="120" height="120" decoding="async" data-nimg="1" class="styles_img__paUgT" src="/images/client6.png" style="color: transparent;">
+                    </div>
+                </li>
+                <li data-index="12" aria-hidden="false" class="react-multi-carousel-item react-multi-carousel-item--active " style="flex: 1 1 auto; position: relative; width: 191px;">
+                    <div class="styles_item__UQpeW">
+                        <img alt="" loading="lazy" width="120" height="120" decoding="async" data-nimg="1" class="styles_img__paUgT" src="/images/client1.png" style="color: transparent;">
+                    </div>
+                </li>
+                <li data-index="13" aria-hidden="true" class="react-multi-carousel-item  " style="flex: 1 1 auto; position: relative; width: 191px;">
+                    <div class="styles_item__UQpeW">
+                        <img alt="" loading="lazy" width="120" height="120" decoding="async" data-nimg="1" class="styles_img__paUgT" src="/images/client2.png" style="color: transparent;">
+                    </div>
+                </li>
+                <li data-index="14" aria-hidden="true" class="react-multi-carousel-item  " style="flex: 1 1 auto; position: relative; width: 191px;">
+                    <div class="styles_item__UQpeW">
+                        <img alt="" loading="lazy" width="120" height="120" decoding="async" data-nimg="1" class="styles_img__paUgT" src="/images/client3.png" style="color: transparent;">
+                    </div>
+                </li>
+                <li data-index="15" aria-hidden="true" class="react-multi-carousel-item  " style="flex: 1 1 auto; position: relative; width: 191px;">
+                    <div class="styles_item__UQpeW">
+                        <img alt="" loading="lazy" width="120" height="120" decoding="async" data-nimg="1" class="styles_img__paUgT" src="/images/client4.png" style="color: transparent;">
+                    </div>
+                </li>
+                <li data-index="16" aria-hidden="true" class="react-multi-carousel-item  " style="flex: 1 1 auto; position: relative; width: 191px;">
+                    <div class="styles_item__UQpeW">
+                        <img alt="" loading="lazy" width="120" height="120" decoding="async" data-nimg="1" class="styles_img__paUgT" src="/images/client5.png" style="color: transparent;">
+                    </div>
+                </li>
+                <li data-index="17" aria-hidden="true" class="react-multi-carousel-item  " style="flex: 1 1 auto; position: relative; width: 191px;">
+                    <div class="styles_item__UQpeW">
+                        <img alt="" loading="lazy" width="120" height="120" decoding="async" data-nimg="1" class="styles_img__paUgT" src="/images/client6.png" style="color: transparent;">
+                    </div>
+                </li>
+            </ul>
+            <button aria-label="Go to previous slide" class="react-multiple-carousel__arrow react-multiple-carousel__arrow--left " type="button">
+
+            </button>
+            <button aria-label="Go to next slide" class="react-multiple-carousel__arrow react-multiple-carousel__arrow--right " type="button"></button>
+        </div></div> -->
         <!-- Brand area end here -->
 
 
@@ -576,13 +693,16 @@
                                 <input type="email" placeholder="الرجاء ادخال البريد الالكتروني ">
                                 <button><i class="fa-solid fa-paper-plane"></i></button>
                             </div>
-                           <div class="social-icon mt-40">
+                            <div class="social-icon mt-40">
                                 <a href="https://www.tiktok.com/@mbn_cp?_t=8figzcxh02d&_r=1"><i class="fa-brands fa-tiktok"></i></a>
                                 <a href="https://x.com/i/flow/login?redirect_after_login=%2Fmbn_cp"><i class="fa-brands fa-twitter"></i></a>
                                 <a href="https://www.linkedin.com/company/maher-bin-naif-gruop"><i class="fa-brands fa-linkedin-in"></i></a>
                                 <a href="https://www.instagram.com/mbn_cp/?igshid=MzRlODBiNWFlZA%3D%3D"><i class="fa-brands fa-instagram"></i></a>
                                 <a href="https://www.snapchat.com/add/mbn_cp?share_id=O0udupOfi8U&locale=ar-SA"> <i class="fa-brands fa-snapchat"></i></a>
 
+
+
+                                
                             </div>
                         </div>
                     </div>
@@ -593,9 +713,9 @@
                     <img src="assets/images/logo/logo.png" alt="logo">
                 </a>
                 <p>&copy;  2023 <a href="#0" class="primary-hover">MBN</a> جميع الحقوق محفوظة</p>
-                <a href="#0" class="payment d-block image">
+                <!-- <a href="#0" class="payment d-block image">
                     <img src="assets/images/icon/payment.png" alt="icon">
-                </a>
+                </a> -->
             </div>
            
         </div>
@@ -648,6 +768,25 @@
         }
 
 
+    </script>
+
+<script>
+    // Get the video
+    var video = document.getElementById("myVideo");
+    
+    // Get the button
+    var btn = document.getElementById("myBtn");
+    
+    // Pause and play the video, and change the button text
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
     </script>
 </body>
 
