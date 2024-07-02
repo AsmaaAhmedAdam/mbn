@@ -3011,7 +3011,7 @@ input {
 .banner-two {
   overflow: hidden;
   position: relative;
- opacity: 0.50;
+ opacity: 0.20;
 }
 .banner-two__shape-left {
   position: absolute;
